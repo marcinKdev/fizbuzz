@@ -34,9 +34,9 @@ public class FizzBuzz {
     }
 
     public String playGameFor(int rangeSize){
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i=1; i<=rangeSize; i++){
-            result += (play(i) + ",");
+            result.append(play(i) + ",");
         }
         return result.substring(0, result.length()-1);
     }
