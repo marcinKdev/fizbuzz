@@ -43,10 +43,8 @@ public class FizzBuzzTest {
 
     @Test
     public void givesProperArrayFor100(){
-        List<String> list = fizzBuzz.playGameFor(100);
-        Assert.assertEquals(100, list.size());
-        Assert.assertEquals("1", list.get(0));
-        Assert.assertEquals("Buzz", list.get(99));
+        String result = fizzBuzz.playGameFor(100);
+        Assert.assertEquals('1', result.charAt(0));
     }
 
 

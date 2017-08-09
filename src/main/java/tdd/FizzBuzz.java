@@ -33,11 +33,11 @@ public class FizzBuzz {
 
     }
 
-    public List<String> playGameFor(int rangeSize){
-        List<String> result = new ArrayList<String>();
+    public String playGameFor(int rangeSize){
+        String result = "";
         for (int i=1; i<=rangeSize; i++){
-            result.add(play(i));
+            result += (play(i) + ",");
         }
-        return result;
+        return result.substring(0, result.length()-1);
     }
 }
